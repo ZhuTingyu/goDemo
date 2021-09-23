@@ -18,5 +18,5 @@ func main() {
 	database.Init()
 	r := gin.Default()
 	r.GET("/user", user.GetById)
-	r.Run(":8800")
+	r.Run("0.0.0.0:8800")
 }
